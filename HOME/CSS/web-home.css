@@ -30,6 +30,103 @@
 }
 
 /* NAVBAR */
+/* navbar start */
+/* nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(84, 92, 92);
+  height: 80px;
+  align-items: center;
+  z-index: 9999;
+}
+
+nav .logo a{
+  text-decoration: none;
+  color: rgba(245, 245, 245, 0.911);
+  overflow: hidden;
+}
+
+nav .logo{
+width: 220px;
+height: 80px;
+border-radius: 3px;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  width: 60%;
+  justify-content: space-between;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: rgba(245, 245, 245, 0.911);
+}
+
+nav ul li a:hover{
+  color: aquamarine;
+}
+
+.menu-toggle{
+  display: none;
+} */
+/* tablet size */
+/* @media screen and (max-width: 810px){
+  nav ul {
+      width: 70%;
+  }
+} */
+
+/* mobile size */
+/* @media screen and (max-width: 576px){
+
+  nav{
+    overflow: visible;
+    align-items: flex-start;
+  }
+
+  nav .logo{
+    height: 80px;
+    width: 220px;
+    overflow: hidden;
+    margin-left: 2px;
+  }
+  nav ul {
+      display: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 50%;
+      height: 100vh;
+      margin-top: 80px;
+      justify-content: space-evenly;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgb(84, 92, 92);
+      z-index: 9999;
+      transform: translateX(140%);
+      transition: all 1s;
+
+  }
+
+  nav ul.slide{
+    transform: translateX(30%);
+  }
+
+  .menu-toggle{
+      display: block;
+      margin-top: 25px;
+      margin-right: 10px;
+  }
+} */
+/* navbar end */
+
+
 .navbar {
   position: fixed;
   display: flex;
@@ -39,12 +136,63 @@
   flex-wrap: wrap;
   background: rgba(13, 14, 13, 0.6);
   width: 100%;
-  z-index: 1;
+  z-index: 999;
 }
+
+/* nav.navbar .container{
+  border: 1px solid rgb(255, 251, 4);
+  overflow: visible;
+} */
 .logo {
   margin-left: -100px;
   margin-right: 100px;
 }
+
+.menu-toggle-jpg{
+  display: none;
+}@media screen and (max-width: 900px){
+
+  .navbar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: rgba(13, 14, 13, 0.6);
+    width: 100%;
+    z-index: 999;
+  }
+  
+  .navbar-nav{
+    text-align: center;
+  }
+  
+  
+  .menu-toggle-jpg{
+    display: block;
+    position: relative;
+    right: 20px;
+    height: 30px;
+    width: 30px;
+  }
+  .logo {
+    padding-left: 70px;
+    margin-right: 0;
+    width: 70%;
+  }
+  
+  .nav-link:hover::after {
+    content: "";
+    border-bottom: 3px solid blue;
+    display: block;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+  
+  }
 
 .nav-link:hover::after {
   content: "";
@@ -58,13 +206,20 @@
 /* END NAVBAR */
 
 /* VIDEO BANNER */
+.container-banner{
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
 .video {
   object-fit: cover;
-  width: 100vw;
-  height: 70vh;
+  width: 100%;
   position: relative;
   max-width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .judul-film-banner {
@@ -112,40 +267,66 @@
   margin-left: 15px;
 }
 
+
+
 .row-tonton {
-  flex-direction: row;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  height: 60px;
   font-size: 20px;
   color: #ffffff;
-  bottom: 8px;
-  left: 930px;
-  top: 640px;
+  margin-bottom: 10px;
+  bottom: 0;
+  left: 0;
   position: absolute;
   text-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.7);
 }
 
 .row-tonton .tonton {
+  text-decoration: none;
   margin-right: 10px;
 }
 /* END VIDEO BANNER */
 
 /* DAFTAR MOVIE */
 .container-kategori {
-  padding: 0 10px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.container-kategori a{
+  text-decoration: none;
+}
+
+.container-daftar-movie{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.container-kotak-film{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .judul-kategori {
   font-size: 20px;
   font-weight: 600;
   color: black;
-  text-shadow: 3px 2px 1px whitesmoke;
+  text-shadow: 3px 2px 1px rgba(187, 186, 186, 0.74);
 }
 
 .lihat-semuanya {
+  margin-left: 100px;
+  text-decoration: none;
   font-size: 15px;
   color: black;
-  text-shadow: 3px 2px 1px whitesmoke;
-  position: relative;
-  padding-left: 940px;
+  text-shadow: 3px 2px 1px rgba(187, 186, 186, 0.74);
+  
 }
 
 * {
@@ -153,17 +334,21 @@
 }
 
 .kotak-film {
-  float: left;
-  width: 25%;
+  width: 210px;
+  height: 70vh;
   padding: 0 10px;
+  margin-right: 5px;
 }
 
 .daftar-film {
-  margin: 0 -5px;
-  background-color: white;
-  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* margin: 0 -5px; */
+  background-color: white;;
+  /* padding-top: 50px;
   padding-left: 200px;
-  padding-right: 200px;
+  padding-right: 200px; */
 }
 
 .daftar-film:after {
@@ -179,13 +364,13 @@
 }
 
 /* responsive kolom*/
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .kotak-film {
     width: 100%;
     display: block;
     margin-bottom: 20px;
   }
-}
+} */
 
 /* kartu */
 .kartu {
@@ -212,13 +397,37 @@ footer {
   box-sizing: border-box;
 }
 
+.footer{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
 .container-footer {
-  float: left;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 33.33%;
-  padding: 10px;
   height: 300px;
   text-align: center;
-  padding-top: 100px;
+}
+
+.container-footer-last{
+  width: 33.33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .footer:after {
@@ -227,11 +436,11 @@ footer {
   clear: both;
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .container-footer {
     width: 100%;
   }
-}
+} */
 
 .footer-text {
   color: white;
