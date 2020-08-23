@@ -4,4 +4,4 @@ Making Movie Catalog Colloboration With Team
 
 HOME
 
-![](demo.png)
+![](UI UX DESIGN.png)
