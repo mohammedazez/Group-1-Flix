@@ -18,6 +18,12 @@
       crossorigin="anonymous"
     />
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
 
 
     <!-- CSS BIASA-->
@@ -71,35 +77,38 @@
     </div>
 
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg ">
-      <div class="container">
-        <img class="logo" src="/HALAMAN KATEGORI/Assets/img/logo/logo.png" />
-        <div class=" navbar-collapse">
-          <div class="navbar-nav">
-            <a class="nav-link" style="color: #ffffff;" href="#"
-              >HOME <span class="sr-only">(current)</span></a
-            >
-            <a class="nav-link" style="color: #ffffff;" href="#">INDONESIA</a>
-            <a class="nav-link" style="color: #ffffff;" href="#">ANIME</a>
-            <a class="nav-link" style="color: #ffffff;" href="#">ROMANTIS</a>
-            <a class="nav-link" style="color: #ffffff;" href="#">HORROR</a>
-            <a class="nav-link" style="color: #ffffff;" href="#">DRAMA</a>
-            <a class="nav-link" style="color: #ffffff;" href="#">COMEDY</a>
-            <a class="nav-link" style="color: #ffffff;" href="#">ACTION</a>
-            <a class="button-navbar tombol" href="#">MASUK</a>
-            <a
-              class="button-navbar tombol"
-              href="#"
-              tabindex="-1"
-              aria-disabled="true"
-              >DAFTAR</a
-            >
-          </div>
+  <!-- START NAVBAR -->
+  <nav class="navbar navbar-expand-lg " style="border: 1px solid black;">
+    <div class="container">
+      <img class="logo" src="/HALAMAN KATEGORI/Assets/img/logo/logo.png"/>
+      <div class="menu-toggle-jpg navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="/HALAMAN KATEGORI/Assets/icons/icon-menu.png" alt="iconMenu">
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav">
+          <a class="nav-link" style="color: #ffffff;" href="#"
+            >HOME <span class="sr-only">(current)</span></a
+          >
+          <a class="nav-link" style="color: #ffffff;" href="#">INDONESIA</a>
+          <a class="nav-link" style="color: #ffffff;" href="#">ANIME</a>
+          <a class="nav-link" style="color: #ffffff;" href="#">ROMANTIS</a>
+          <a class="nav-link" style="color: #ffffff;" href="#">HORROR</a>
+          <a class="nav-link" style="color: #ffffff;" href="#">DRAMA</a>
+          <a class="nav-link" style="color: #ffffff;" href="#">COMEDY</a>
+          <a class="nav-link" style="color: #ffffff;" href="#">ACTION</a>
+          <a class="button-navbar tombol" href="#">MASUK</a>
+          <a
+            class="button-navbar tombol"
+            href="#"
+            tabindex="-1"
+            aria-disabled="true"
+            >DAFTAR</a
+          >
         </div>
       </div>
-    </nav>
-    <!-- END NAVBAR-->
+    </div>
+  </nav>
+  <!-- END NAVBAR-->
 
 
     <!-- INI SLIDESHOW -->
@@ -139,68 +148,82 @@
 
     <!--DAFTAR MOVIE-->
 
-    <div style="padding-top: 100px; padding-bottom: 50px; padding-left: 100px; padding-right: 100px;" class="w3-row w3-container">
-      <div class="container-kategori">
-        <a class="judul-kategori" href="#">GENRE: ACTION</a>
-        <a class="lihat-semuanya" href="#">Back To Home</a>
+      <div class="container-daftar-movie">
+        <div  class="daftar-film">
+          <div class="container-kategori">
+            <a class="judul-kategori" href="#">GENRE: ACTION</a>
+            <a class="lihat-semuanya" href="#">Back To Home</a>
+          </div>
+          <div class="container-kotak-film">
+            <div class="kotak-film">
+              <img class="cover" src="/HALAMAN KATEGORI/Assets/img/movie cover/movie.jpg ">
+              <div class="kartu">
+                <a class="judul-film" href="#">Tribal Get Out Alive (2020)</a>
+              <span>
+                <br>
+              <a href="https://goflix.se/genre/Action">Action</a>
+              <a href="https://goflix.se/genre/Horror">Horror</a>
+              <a href="https://goflix.se/genre/Thriller">Thriller</a>
+              </div>
+            </div>
+            <div class="kotak-film">
+              <img class="cover" src="/HALAMAN KATEGORI/Assets/img/movie cover/act1.jpg ">
+              <div class="kartu">
+                <a class="judul-film" href="#">American Fighter (2020)</a>
+              <span>
+                <br>
+              <a href="https://goflix.se/genre/Action">Action</a>
+              <!-- <a href="https://goflix.se/genre/Horror">Horror</a>
+              <a href="https://goflix.se/genre/Thriller">Thriller</a> -->
+              </div>
+            </div>
+            <div class="kotak-film">
+              <img class="cover" src="/HALAMAN KATEGORI/Assets/img/movie cover/act2.jpg ">
+              <div class="kartu">
+                <a class="judul-film" href="#">The Silencing (2020)</a>
+              <span>
+                <br>
+              <a href="https://goflix.se/genre/crime">Crime</a>
+              <a href="https://goflix.se/genre/Horror">Horror</a>
+              <a href="https://goflix.se/genre/Thriller">Thriller</a>
+              </div>
+            </div>
+            <div class="kotak-film">
+              <img class="cover" src="/HALAMAN KATEGORI/Assets/img/movie cover/act3.jpg ">
+              <div class="kartu">
+                <a class="judul-film" href="#">Psych 2: Lassie Come</a>
+              <span>
+                <br>
+              <a href="https://goflix.se/genre/Action">Action</a>
+              <!-- <a href="https://goflix.se/genre/Horror">Horror</a>
+              <a href="https://goflix.se/genre/Thriller">Thriller</a> -->
+              </div>
+            </div>
+            <div class="kotak-film">
+              <img class="cover" src="/HALAMAN KATEGORI/Assets/img/movie cover/act4.jpg ">
+              <div class="kartu">
+                <a class="judul-film" href="#">Greyhound (2020)</a>
+              <span>
+                <br>
+              <a href="https://goflix.se/genre/Action">Action</a>
+              <!-- <a href="https://goflix.se/genre/Horror">Horror</a> -->
+              <a href="https://goflix.se/genre/Thriller">Thriller</a>
+              </div>
+            </div>
+            <div class="kotak-film">
+              <img class="cover" src="/HALAMAN KATEGORI/Assets/img/movie cover/act5.jpg ">
+              <div class="kartu">
+                <a class="judul-film" href="#">Legacy <br> (2020)</a>
+              <span>
+                <br>
+              <a href="https://goflix.se/genre/Action">Action</a>
+              <!-- <a href="https://goflix.se/genre/Horror">Horror</a> -->
+              <a href="https://goflix.se/genre/Thriller">Thriller</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="w3-row">
-        <div class="w3-col m2 w3-white w3-center kartu">
-          <img class="cover" src="/HALAMAN KATEGORI/Assets/img/movie cover/movie.jpg ">
-          <a class="judul-film" href="#">Tribal Get Out Alive (2020)</a>
-          <span>
-            <br>
-          <a href="https://goflix.se/genre/Action">Action</a>
-          <a href="https://goflix.se/genre/Horror">Horror</a>
-          <a href="https://goflix.se/genre/Thriller">Thriller</a>
-        </div>
-        <div class="w3-col m2 w3-white w3-center kartu">
-          <img class="cover" src="/HALAMAN KATEGORI/Assets/img/movie cover/act1.jpg ">
-          <a class="judul-film" href="#">American Fighter (2020)</a>
-          <span>
-            <br>
-          <a href="https://goflix.se/genre/Action">Action</a>
-          <!-- <a href="https://goflix.se/genre/Horror">Horror</a>
-          <a href="https://goflix.se/genre/Thriller">Thriller</a> -->
-        </div>
-        <div class="w3-col m2 w3-white w3-center kartu">
-          <img class="cover" src="/HALAMAN KATEGORI/Assets/img/movie cover/act2.jpg ">
-          <a class="judul-film" href="#">The Silencing (2020)</a>
-          <span>
-            <br>
-          <a href="https://goflix.se/genre/crime">Crime</a>
-          <a href="https://goflix.se/genre/Horror">Horror</a>
-          <a href="https://goflix.se/genre/Thriller">Thriller</a>
-        </div>
-        <div class="w3-col m2 w3-white w3-center kartu">
-          <img class="cover" src="/HALAMAN KATEGORI/Assets/img/movie cover/act3.jpg ">
-          <a class="judul-film" href="#">Psych 2: Lassie Come</a>
-          <span>
-            <br>
-          <a href="https://goflix.se/genre/Action">Action</a>
-          <!-- <a href="https://goflix.se/genre/Horror">Horror</a>
-          <a href="https://goflix.se/genre/Thriller">Thriller</a> -->
-        </div>
-        <div class="w3-col m2 w3-white w3-center kartu">
-          <img class="cover" src="/HALAMAN KATEGORI/Assets/img/movie cover/act4.jpg ">
-          <a class="judul-film" href="#">Greyhound (2020)</a>
-          <span>
-            <br>
-          <a href="https://goflix.se/genre/Action">Action</a>
-          <!-- <a href="https://goflix.se/genre/Horror">Horror</a> -->
-          <a href="https://goflix.se/genre/Thriller">Thriller</a>
-        </div>
-        <div class="w3-col m2 w3-white w3-center kartu">
-          <img class="cover" src="/HALAMAN KATEGORI/Assets/img/movie cover/act5.jpg ">
-          <a class="judul-film" href="#">Legacy <br> (2020)</a>
-          <span>
-            <br>
-          <a href="https://goflix.se/genre/Action">Action</a>
-          <!-- <a href="https://goflix.se/genre/Horror">Horror</a> -->
-          <a href="https://goflix.se/genre/Thriller">Thriller</a>
-        </div>
-      </div>
-    </div>
 
 
 <!-- END DAFTAR MOVIE-->
@@ -238,11 +261,11 @@
         <a class="footer-text" href="#">Terms of Service</a>
         <a class="footer-text" href="#">Contact</a>
       </div>
-      <div class="container-footer" style="background-color:black;">
+      <div class="container-footer middle" style="background-color:black;">
         <img src="/HALAMAN KATEGORI/Assets/img/logo/logo.png"><br>
         <a class="Copyright" href="#">Copyright © 2020 GROUP 1 Flix. All Rights Reserved.</a>
       </div>
-      <div class="container-footer" style="background-color:black;">
+      <div class="container-footer-last" style="background-color:black;">
         <img class="sosial-footer" href="#" src="/HALAMAN KATEGORI/Assets/icons/Instagram_white.png">
         <img class="sosial-footer" href="#" src="/HALAMAN KATEGORI/Assets/icons/Facebook_white.png">
         <img class="sosial-footer" href="#" src="/HALAMAN KATEGORI/Assets/icons/Twitter_white.png">

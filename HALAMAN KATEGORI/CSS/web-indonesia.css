@@ -38,12 +38,63 @@
   flex-wrap: wrap;
   background: rgba(13, 14, 13, 0.6);
   width: 100%;
-  z-index: 1;
+  z-index: 999;
 }
+
+/* nav.navbar .container{
+  border: 1px solid rgb(255, 251, 4);
+  overflow: visible;
+} */
 .logo {
   margin-left: -100px;
   margin-right: 100px;
 }
+
+.menu-toggle-jpg{
+  display: none;
+}@media screen and (max-width: 900px){
+
+  .navbar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: rgba(13, 14, 13, 0.6);
+    width: 100%;
+    z-index: 999;
+  }
+  
+  .navbar-nav{
+    text-align: center;
+  }
+  
+  
+  .menu-toggle-jpg{
+    display: block;
+    position: relative;
+    right: 20px;
+    height: 30px;
+    width: 30px;
+  }
+  .logo {
+    padding-left: 70px;
+    margin-right: 0;
+    width: 70%;
+  }
+  
+  .nav-link:hover::after {
+    content: "";
+    border-bottom: 3px solid blue;
+    display: block;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+  
+  }
 
 .nav-link:hover::after {
   content: "";
@@ -58,22 +109,42 @@
 
 /* DAFTAR MOVIE */
 .container-kategori {
-  padding: 0 10px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.container-kategori a{
+  text-decoration: none;
+}
+
+.container-daftar-movie{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.container-kotak-film{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .judul-kategori {
   font-size: 20px;
   font-weight: 600;
   color: black;
-  text-shadow: 3px 2px 1px whitesmoke;
+  text-shadow: 3px 2px 1px rgba(187, 186, 186, 0.74);
 }
 
 .lihat-semuanya {
+  margin-left: 100px;
+  text-decoration: none;
   font-size: 15px;
   color: black;
-  text-shadow: 3px 2px 1px whitesmoke;
-  position: relative;
-  padding-left: 940px;
+  text-shadow: 3px 2px 1px rgba(187, 186, 186, 0.74);
+  
 }
 
 * {
@@ -81,17 +152,21 @@
 }
 
 .kotak-film {
-  float: left;
-  width: 25%;
+  width: 210px;
+  height: 70vh;
   padding: 0 10px;
+  margin-right: 5px;
 }
 
 .daftar-film {
-  margin: 0 -5px;
-  background-color: white;
-  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* margin: 0 -5px; */
+  background-color: white;;
+  /* padding-top: 50px;
   padding-left: 200px;
-  padding-right: 200px;
+  padding-right: 200px; */
 }
 
 .daftar-film:after {
@@ -107,20 +182,20 @@
 }
 
 /* responsive kolom*/
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .kotak-film {
     width: 100%;
     display: block;
     margin-bottom: 20px;
   }
-}
+} */
 
 /* kartu */
 .kartu {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
-  background-color: #ffffff;
+  background-color: #f1f1f1;
 }
 
 /* cover */
@@ -140,13 +215,37 @@ footer {
   box-sizing: border-box;
 }
 
+.footer{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
 .container-footer {
-  float: left;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 33.33%;
-  padding: 10px;
   height: 300px;
   text-align: center;
-  padding-top: 100px;
+}
+
+.container-footer-last{
+  width: 33.33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .footer:after {
@@ -155,11 +254,11 @@ footer {
   clear: both;
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .container-footer {
     width: 100%;
   }
-}
+} */
 
 .footer-text {
   color: white;
