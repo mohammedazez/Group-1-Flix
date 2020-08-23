@@ -1,0 +1,249 @@
+/* KOMPONEN LAIN-LAIN */
+/* tombol */
+.tombol {
+  margin-right: 5px;
+  border-radius: 10px;
+}
+.button-navbar {
+  background-color: #0aaee4;
+  border: none;
+  color: white;
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button {
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background: rgba(8, 103, 180, 0.6);
+  border-radius: 10px;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: rgba(13, 14, 13, 0.6);
+  width: 100%;
+  z-index: 1;
+}
+.logo {
+  margin-left: -100px;
+  margin-right: 100px;
+}
+
+.nav-link:hover::after {
+  content: "";
+  border-bottom: 3px solid blue;
+  display: block;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 5px;
+  margin-bottom: -8px;
+}
+/* END NAVBAR */
+
+/* VIDEO BANNER */
+.video {
+  object-fit: cover;
+  width: 100vw;
+  height: 70vh;
+  position: relative;
+  max-width: 100%;
+  height: 100vh;
+}
+
+.judul-film-banner {
+  font-size: 30px;
+  position: absolute;
+  text-shadow: 3px 2px 1px grey;
+  bottom: 150px;
+  margin-left: 195px;
+  color: white;
+  font-weight: 700;
+}
+.row {
+  flex-direction: row;
+  font-size: 15px;
+  color: #ffffff;
+  bottom: 8px;
+  left: 16px;
+  margin-left: 180px;
+  margin-bottom: 100px;
+  position: absolute;
+  text-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.row .row-satu {
+  padding-right: 20px;
+  text-shadow: 3px 2px 1px grey;
+}
+
+.row-bintang {
+  position: absolute;
+  flex-direction: row;
+  bottom: 80px;
+  margin-left: 195px;
+}
+
+.row-bintang .star {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.row-bintang .angka-rating {
+  width: 35px;
+  height: 35px;
+  margin-left: 15px;
+}
+
+.row-tonton {
+  flex-direction: row;
+  font-size: 20px;
+  color: #ffffff;
+  bottom: 8px;
+  left: 930px;
+  top: 640px;
+  position: absolute;
+  text-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.row-tonton .tonton {
+  margin-right: 10px;
+}
+/* END VIDEO BANNER */
+
+/* DAFTAR MOVIE */
+.container-kategori {
+  padding: 0 10px;
+}
+
+.judul-kategori {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  text-shadow: 3px 2px 1px whitesmoke;
+}
+
+.lihat-semuanya {
+  font-size: 15px;
+  color: black;
+  text-shadow: 3px 2px 1px whitesmoke;
+  position: relative;
+  padding-left: 940px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.kotak-film {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.daftar-film {
+  margin: 0 -5px;
+  background-color: white;
+  padding-top: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.daftar-film:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.judul-film {
+  text-overflow: ellipsis;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+/* responsive kolom*/
+@media screen and (max-width: 600px) {
+  .kotak-film {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* kartu */
+.kartu {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* cover */
+.cover {
+  max-width: 100%;
+}
+
+/* END DAFTAR MOVIE */
+
+/* FOOTER */
+footer {
+  padding-top: 150px;
+  background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container-footer {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .container-footer {
+    width: 100%;
+  }
+}
+
+.footer-text {
+  color: white;
+  padding-left: 20px;
+}
+
+.logo-footer .Copyright {
+  color: white;
+}
+
+.sosial-footer {
+  width: 30px;
+  height: 30px;
+}
+/* END FOOTER */
