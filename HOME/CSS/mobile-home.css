@@ -1,88 +1,11 @@
-@media screen and (max-width: 500px) {
-  /* KOMPONEN LAIN LAIN */
-  body {
-    background-color: blue;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
+@media screen and (max-width: 500px){
+    .judul-film-banner{
+        top: 300px;
+    }
 
-  .tombol {
-    text-transform: uppercase;
-    border-radius: 10px;
-    margin-bottom: 5px;
-  }
-
-  /* NAVBAR */
-  .navbar {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background: rgba(13, 14, 13, 0.6);
-    width: 100%;
-    z-index: 1;
-  }
-  .logo {
-    height: 60px;
-    width: 60px;
-  }
-
-  .nav-link:hover::after {
-    content: "";
-    border-bottom: 3px solid blue;
-    display: block;
-    width: 50%;
-    margin: auto;
-    padding-bottom: 5px;
-    margin-bottom: -8px;
-  }
-  /*END NAVBAR*/
-
-  /*VIDEO BANNER*/
-  .video {
-    position: relative;
-    padding-left: 10px;
-    max-width: 100px;
-  }
-
-  .judul-film-banner {
-    color: #ffffff;
-    position: relative;
-    bottom: 170px;
-    left: 65px;
-    font-weight: 700;
-  }
-
-  .row {
-    position: relative;
-    flex-direction: row;
-    font-size: 13px;
-    color: #ffffff;
-    bottom: 100px;
-    left: 80px;
-    text-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.7);
-  }
-
-  .row .row-satu {
-    padding-right: 10px;
-  }
-
-  .row-bintang {
-    position: relative;
-    flex-direction: row;
-    bottom: 105px;
-    margin-left: 62px;
-  }
-
-  .row-bintang .star {
-    width: 15px;
-    height: 15px;
-    margin-right: 5px;
-  }
-  /*END VIDEO BANNER*/
-
-  /* FOOTER */
-
-  /* END FOOTER */
+    .middle img{
+        position: absolute;
+        top: 0;
+    }
 }
+
