@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: "ubuntu";
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.video-container {
+    height: 270px;
+    width: 100x;
+}
+
+.container {
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.top-wrapper {
+    padding: 10px 0 100px 0;
+    color: rgb(17, 17, 17);
+    background-color: rgb(253, 238, 238);
+}
+
+hr {
+    border-color: red;
+}
+
+.title-wrapper {
+    margin-top: 20px;
+}
+
+#left-wrapper {
+    float: left;
+    margin-left: -20px;
+}
+
+#right-wrapper {
+    float: right;
+}
+
+#right-wrapper a {
+    color: rgb(247, 45, 45);
+}
+
+
+.middle-wrapper {
+    height: 500px;
+    padding-bottom: 80px;
+    background-color: #f7f7f7;
+}
+
+.movie-catalog {
+    margin-top: 10px;
+    margin-left: 70px;
+
+}
+
+.movie-item {
+    float: left;
+    width: 20%;
+    margin-top: 20px;
+
+}
+
+.movie-item p {
+    line-height: 2px;
+}
+
+.movie-item img {
+    height: 300px;
+}
+
+.movie-icon p {
+    font-size: 20px;
+    font-weight: bold;
+}
+.txt-content {
+    margin-top: 0;
+}
+
+#txt-left {
+    float: left;
+}
+
+#txt-right {
+    float: right;
+    margin-right: 55px;
+}
+
+.movie-icon:hover img {
+    opacity: 0.7;
+    background-color: red;
+}

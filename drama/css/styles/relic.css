@@ -1,0 +1,48 @@
+.container {
+    height: auto;
+    width: 100%;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.movie-item {
+    margin: 10px 30px auto 50px;
+}
+
+.left-movie {
+    float: left;
+    width: 50%;
+}
+
+.movie-img {
+    float: left;
+}
+
+.movie-img img {
+    height: 350px;
+}
+
+.movie-description h3{
+    color: black;
+    font-size: 30px;
+    margin: 0 20px 20px 43%;
+    text-align: justify;
+}
+
+.movie-description p{
+    color: saddlebrown;
+    margin: 0 20px 0 43%;
+    text-align: justify;
+}
+
+/* .text {
+    color: saddlebrown;
+    margin: 0 20px 0 43%;
+} */
+
+.right-movie {
+    float: right;
+    width: 50%;
+}
