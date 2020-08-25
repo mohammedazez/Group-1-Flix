@@ -8,6 +8,6 @@ https://group1flix.netlify.app/
 
 The Next Inovation
 CSS :
-Link transition pada cover film,
+Efek Animation transition pada cover film,
 Tambahkan fitur cari.
 
