@@ -1,0 +1,10 @@
+@media screen and (max-width: 500px) {
+  .judul-film-banner {
+    top: 300px;
+  }
+
+  .middle img {
+    position: absolute;
+    top: 0;
+  }
+}
