@@ -1,21 +1,11 @@
 # Group-1-Flix
 
 Making Movie Catalog Collaboration With Team
+Visit Our Site :
+https://group1flix.netlify.app/
 
+The Next Inovation
 CSS :
 Link transition pada cover film,
 Tambahkan fitur cari,
-Link masuk pada tiap film,
 
-
-Struktur HTML HOME:
-NAVBAR,
-VIDEO BANNER,
-DAFTAR MOVIE,
-FOOTER,
-
-Struktur HTML Kategori Page: 
-NAVBAR,
-SLIDESHOW,
-DAFTAR MOVIE,
-FOOTER,
