@@ -4,7 +4,7 @@ This site is The next IndoXXI, Iflix, and Netflix.
 
 Making Movie Catalog Collaboration With Team
 Visit Our Site :
-https://group1flix.netlify.app/
+https://group-1-flix.netlify.app/
 
 The Next Inovation
 CSS :
